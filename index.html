@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>Formulario de alta</h1>
+        <form class="formu">
+            <!---Primer parte-->
+            <hr>
+            <div class="box">
+                <div class="titulo">
+                    <label>Nombre y apellidos</label><label class="rojo">*</label>
+                </div>
+                <div id="nombres">
+                    <table>
+                        <tr>
+                            <td><input type="text" name="" id="nombre"></td>
+                        </tr>
+                        <tr>
+                            <td><label>nombre</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="" id="apellido1"></td>
+                        </tr>
+                        <tr>
+                            <td><label>apellido paterno</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="" id="apellido2"></td>
+                        </tr>
+                        <tr>
+                            <td><label>apellido materno</label></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="info">
+                    No olvides escribir tu segundo apellido
+                </div>
+            </div>
+            <!---Segunda parte-->
+            <hr>
+            <div class="box">
+                <div class="titulo">
+                    <label>Direccion</label><label class="rojo">*</label>
+                </div>
+                <div id="direccion">
+                    <table>
+                        <tr>
+                            <td><input type="text" name="" id="domicilio"></td>
+                        </tr>
+                        <tr>
+                            <td><label>calle,numero,piso,puerta</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" name="" id="cp"></td>
+                            <td><input type="text" name="" id="municipio"></td>
+                        </tr>
+                        <tr>
+                            <td><label>codigo postal</label></td>
+                            <td><label>municipio</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="lista">
+                                  <option value="pv1">Provincia 1</option>
+                                  <option value="pv2">Provincia 2</option>
+                                  <option value="pv3">Provincia 3</option>
+                                  <option value="pv4">Provincia 4</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="lista">
+                                    <option value="pa1">Pais 1</option>
+                                    <option value="pa2">Pais 2</option>
+                                    <option value="pa3">Pais 3</option>
+                                    <option value="pa4">Pais 4</option>
+                                  </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>estado de la republica</label></td>
+                            <td><label>Pais</label></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!---tercera parte-->
+            <hr>
+            <div class="box" id="box2">
+                <div class="titulo">
+                    <label>Email</label>
+                </div>
+                <div id="nombres">
+                    <table>
+                        <tr>
+                            <td><input type="text" name="" id="correo"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Correo</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="" id="correo2"></td>
+                        </tr>
+                        <tr>
+                            <td><label>validar correo</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!----->
+            <!---cuarta parte-->
+            <hr>
+            <div class="box" id="box3">
+                <div class="titulo">
+                    <label>Telefono</label><label class="rojo">*</label>
+                </div>
+                <div id="direccion">
+                    <table>
+                        <tr>
+                            <td><input type="text" name="" id="tel1"></td>
+                            <td><input type="text" name="" id="tel2"></td>
+                        </tr>
+                        <tr>
+                            <td><label>fijo</label></td>
+                            <td><label>movil</label></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!----->
+            <hr>
+            <button id="confirmar" onclick="validarCorreo()" type='button'>Confirmar</button>
+
+    </div>
+
+    </form>
+
+</body>
+
+</html>

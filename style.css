@@ -1,0 +1,160 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: rgba(197, 194, 194, 0.8);
+    font-size: 15px;
+    width: 100%;
+    height: 840px;
+    background-image: url("https://bit.ly/3d6hBlD");
+    min-width: 588px;
+    min-height: 720px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.formu label {
+    font-weight: bold;
+}
+
+.rojo {
+    margin-left: 2px;
+    color: red;
+    font-size: 20px;
+}
+
+#contenedor {
+    width: 50%;
+    height: 90%;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    box-shadow: -2px 0px 10px salmon;
+}
+
+.titulo {
+    width: 20%;
+    display: block;
+    float: left;
+    margin-right: 10%;
+}
+
+#nombres {
+    padding: 1%;
+    display: block;
+    float: left;
+    width: 30%;
+}
+
+#nombres label {
+    opacity: 20%;
+    font-size: 10px;
+}
+
+#direccion {
+    margin-left: 20%;
+    display: block;
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+
+#direccion label {
+    opacity: 20%;
+    font-size: 10px;
+}
+
+.box {
+    padding: 20px;
+    height: 150px;
+}
+
+.info {
+    height: 100%;
+    opacity: 0%;
+}
+
+.info:hover {
+    height: 100%;
+    opacity: 100%;
+    font-style: oblique;
+}
+
+.box:hover {
+    background-color: rgba(252, 53, 53, 0.507);
+}
+
+input {
+    padding: 3px;
+}
+
+input:focus {
+    border: 1px solid black;
+    box-shadow: 0px 0px 1px black;
+}
+
+#box2 {
+    height: 95px;
+}
+
+#box3 {
+    height: 50px;
+}
+
+#confirmar {
+    display: block;
+    float: right;
+    margin: auto;
+}
+
+button {
+    background-color: rgba(250, 128, 114, 0.774);
+    border: 1px solid rgb(247, 122, 108);
+    border-radius: 0px 8px 0px 8px;
+    padding: 5px;
+    color: aliceblue;
+    text-shadow: -1px -1px 5px rgb(202, 6, 6);
+}
+
+option {
+    color: black;
+    background-color: rgba(252, 53, 53, 0.205);
+}
+
+@media(max-width: 896px) {
+    input {
+        width: 80%;
+    }
+    .info {
+        width: 20%;
+    }
+}
+
+@media(max-width: 792px) {
+    label {
+        font-size: 80%;
+    }
+    #nombres label {
+        font-size: 50%;
+    }
+    .rojo {
+        font-size: 80%;
+    }
+}
+
+@media(max-width: 645px) {
+    h1 {
+        font-size: 90%;
+    }
+    label {
+        font-size: 60%;
+    }
+    #nombres label {
+        font-size: 30%;
+    }
+}
