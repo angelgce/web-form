@@ -158,3 +158,13 @@ option {
         font-size: 30%;
     }
 }
+
+.formato h2 {
+    font-size: 18px;
+}
+
+.formato label {
+    font-size: 90%;
+    font-style: oblique;
+    text-shadow: 1px black;
+}

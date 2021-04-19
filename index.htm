@@ -3,15 +3,14 @@
 
 <head>
     <meta charset='utf-8'>
-    <title>Formulario</title>
+    <title>Formulario PHP1</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
     <div id="contenedor">
         <h1>Formulario de alta</h1>
-        <form class="formu">
+        <form class="formu" action="formpost.php" method="post">
             <!---Primer parte-->
             <hr>
             <div class="box">
@@ -21,19 +20,19 @@
                 <div id="nombres">
                     <table>
                         <tr>
-                            <td><input type="text" name="" id="nombre"></td>
+                            <td><input type="text" name="nombre"></td>
                         </tr>
                         <tr>
                             <td><label>nombre</label></td>
                         </tr>
                         <tr>
-                            <td><input type="text" name="" id="apellido1"></td>
+                            <td><input type="text" name="apellido1"></td>
                         </tr>
                         <tr>
                             <td><label>apellido paterno</label></td>
                         </tr>
                         <tr>
-                            <td><input type="text" name="" id="apellido2"></td>
+                            <td><input type="text" name="apellido2"></td>
                         </tr>
                         <tr>
                             <td><label>apellido materno</label></td>
@@ -53,14 +52,14 @@
                 <div id="direccion">
                     <table>
                         <tr>
-                            <td><input type="text" name="" id="domicilio"></td>
+                            <td><input type="text" name="domicilio"></td>
                         </tr>
                         <tr>
                             <td><label>calle,numero,piso,puerta</label></td>
                         </tr>
                         <tr>
-                            <td><input type="number" name="" id="cp"></td>
-                            <td><input type="text" name="" id="municipio"></td>
+                            <td><input type="number" name="cp"></td>
+                            <td><input type="text" name="municipio"></td>
                         </tr>
                         <tr>
                             <td><label>codigo postal</label></td>
@@ -68,19 +67,19 @@
                         </tr>
                         <tr>
                             <td>
-                                <select class="lista">
-                                  <option value="pv1">Provincia 1</option>
-                                  <option value="pv2">Provincia 2</option>
-                                  <option value="pv3">Provincia 3</option>
-                                  <option value="pv4">Provincia 4</option>
+                                <select class="lista" name="estados">
+                                  <option value="Tabasco">Tabasco</option>
+                                  <option value="Veracruz">Veracruz</option>
+                                  <option value="Chiapas">Chiapas</option>
+                                  <option value="Otro">Otro</option>
                                 </select>
                             </td>
                             <td>
-                                <select class="lista">
-                                    <option value="pa1">Pais 1</option>
-                                    <option value="pa2">Pais 2</option>
-                                    <option value="pa3">Pais 3</option>
-                                    <option value="pa4">Pais 4</option>
+                                <select class="lista" name="paises">
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Estados Unidos">Estados Unidos</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Otro">Otro</option>
                                   </select>
                             </td>
                         </tr>
@@ -100,7 +99,7 @@
                 <div id="nombres">
                     <table>
                         <tr>
-                            <td><input type="text" name="" id="correo"></td>
+                            <td><input type="text" name="correo"></td>
                         </tr>
                         <tr>
                             <td><label>Correo</label></td>
@@ -125,8 +124,8 @@
                 <div id="direccion">
                     <table>
                         <tr>
-                            <td><input type="text" name="" id="tel1"></td>
-                            <td><input type="text" name="" id="tel2"></td>
+                            <td><input type="text" name="telefono"></td>
+                            <td><input type="text" name=""></td>
                         </tr>
                         <tr>
                             <td><label>fijo</label></td>
@@ -137,7 +136,8 @@
             </div>
             <!----->
             <hr>
-            <button id="confirmar" onclick="validarCorreo()" type='button'>Confirmar</button>
+            <input type="submit" id="confirmar" value="Enviar"></input>
+
 
     </div>
 
